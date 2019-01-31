@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# 	Script Name	    : JGKINIT                                                                                           
+# 	Description	    : scritp 2 renew kerberos ticket                                                                                                                                                              
+# 	Author       	: Josue Gomez                                              
+# 	Email           : jgomez@jesrat.com  						  
+# 	Args           	: N/A  										  
+# 	Run Information	: jgkinit                                      
+# 	Error Log    	: N/A										  
+
+
+$(grep KRB_TELEF_PASS $MYENV)
+
+main(){
+	echo $KRB_TELEF_PASS | kinit 
+}
+main
